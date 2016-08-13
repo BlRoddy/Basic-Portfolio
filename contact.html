@@ -1,57 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Contact</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<title>Contact | Blake Roddy</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
-		<div class="heading">
-			<div class="name">
-				Blake Roddy
-			</div>
+
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Blake Roddy</a>
 			<nav>
-				<a href="index.html">About Me</a>	|
-				<a href="portfolio.html">Portfolio</a>  |
+				<a href="index.html">About</a>	
+				<a href="portfolio.html">Portfolio</a>  
 				<a href="contact.html">Contact</a>
 			</nav>
 		</div>		
+	</header>	
 
-	<div class="background">
-		<div class="main-body">
-			<div class="content">
+	<div id="main-container" class="container">
+		<section class="main-section">
 			 <h1>Contact</h1>
-				<hr>
-				<form>
-					<p>Name</p>
-					<input type="text" name="name" value="John Doe"><br><br>
-					<p>Email</p>
-					<input type="text" name="email" value="JohnDoe@email.com"><br><br>
-					<p>Message</p>
-					<textarea>
-					</textarea><br>
-					<input type="Submit" name="Submit" class="submit">
-				</form>
-			</div>
 
-			<div class="connect">
-				<h2>Connect With Me</h2>
-				<hr>
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="John Doe" required="required">
+					</li>
+					<li>		
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="JohnDoe@email.com" required="required">
+					</li>
+					<li>	
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required">
+						</textarea>
+					</li>	
+					<input type="Submit">
+				</form>
+			</section>
+
+			<section class="sidebar">
+				<div id="connect">
+					<h2>Connect With Me</h2>
+
 					<a href="https://github.com/blroddy" target="_blank">
-					<img src="assets/images/github.png" alt="GitHub Link">
+					<img src="assets/images/github.png" class="social" alt="GitHub Link">
 					</a>
 					<a href="https://www.linkedin.com/in/blake-roddy" target="_blank">
-					<img src="assets/images/linkedin.png" alt="Linkedin Link">
+					<img src="assets/images/linkedin.png" class="social" alt="Linkedin Link">
 					</a>
 					<a href="mailto:BlRoddy@gmail.com">
-					<img src="assets/images/gmail.png" alt="Gmail Link">
+					<img src="assets/images/gmail.png" class="social" alt="Gmail Link">
 					</a>
-			</div>
-		</div>	
+				</div>
+			</section>	
 	</div>	
-		<footer>
-			<h3>&copy; Copyright 2016 Blake Roddy</h3>
-		</footer>	
+
+	<footer>
+		<div class="container">
+			&copy; Copyright 2016 Blake Roddy
+		</div>	
+	</footer>	
 </body>
 </html>
